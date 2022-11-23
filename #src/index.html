@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css?family=Lato:regular,700,900" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700" rel="stylesheet" />
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>Магазин квартир</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <!-- Header -->
+      @@include("_header.html",{
+      "link":"0"
+      })
+      <!-- Main -->
+      <main class="page">
+         <!-- Hero -->
+         <section class="hero">
+            <div class="container hero__body">
+               <div class="hero__info">
+                  <p class="hero__question">Запутались в сложных терминах и документах?</p>
+                  <h2 class="hero__title">Узнайте, какие <span class="white-stroke">документы</span> подготовить
+                     и что учесть
+                     при <span class="white-stroke">продаже и покупке</span> квартиры</h2>
+                  <button class="hero__btn">Хочу знать больше</button>
+               </div>
+               <figure class="hero__image">
+                  <img src="./img/hero-illustration.png" alt="build">
+               </figure>
+            </div>
+         </section>
+         <!-- Illustrations -->
+         <section class="illustrations">
+            <div class="container illustrations__body">
+               <div class="illustrations__cards">
+                  <div class="illustrations__card">
+                     <div class="illustration__num">1</div>
+                     <p class="illustrations__desc">Какие документы мне нужны для продажи или покупки квартиры?</p>
+                     <figure class="illustrations__image">
+                        <img src="./img/illustration-1.jpg" alt="illustration">
+                     </figure>
+                  </div>
+                  <div class="illustrations__card">
+                     <div class="illustration__num">2</div>
+                     <p class="illustrations__desc">Зайду на www.ccccc.ru и узнаю!</p>
+                     <figure class="illustrations__image">
+                        <img src="./img/illustration-2.jpg" alt="illustration">
+                     </figure>
+                  </div>
+                  <div class="illustrations__card">
+                     <div class="illustration__num">3</div>
+                     <p class="illustrations__desc">Отлично! Теперь я знаю, что делать!</p>
+                     <figure class="illustrations__image">
+                        <img src="./img/illustration-3.jpg" alt="illustration">
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Offer -->
+         <section class="offer">
+            <div class="container offer__body">
+               <h2 class="offer__title">Пройдите небольшой опрос и узнайте, как <span class="red-stroke">избежать
+                     рисков</span> при продаже или покупке
+                  квартиры</h2>
+               <div class="offer__quiz  quiz">
+                  <figure class="quiz__image">
+                     <img src="./img/quiz-image.png" alt="build">
+                  </figure>
+                  <div class="quiz__info">
+                     <h3 class="quiz__subtitle">Время прохождения опроса <span>3 минуты</span></h3>
+                     <h2 class="quiz__title">Хочу безопасно и легко продать или купить квартиру</h2>
+                     <a href="./script-1-q-1.html" class="quiz__btn" target="_blank">Начать</a>
+                     <p class="quiz__desc">После завершения опроса вы получите PDF файл содержащий:</p>
+                     <ol class="quiz__list">
+                        <li class="quiz__item">Список документов, необходимых в вашем конкретном случае.</li>
+                        <li class="quiz__item">Разъяснение сложных терминов «на пальцах».</li>
+                        <li class="quiz__item">Оценку возможных рисков.</li>
+                     </ol>
+                     <figure class="quiz__arrow">
+                        <img src="./img/quiz-arrow.svg" alt="arrow">
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!-- Footer -->
+      @@include("_footer.html",{})
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="js/script.min.js"></script>
+</body>
+
+</html>
